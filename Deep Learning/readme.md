@@ -1,4 +1,4 @@
-#Deep Learning. El modelo para BiciMAD
+# Deep Learning. El modelo para BiciMAD
 
 La generación del modelo se realiza en tres pasos
 
@@ -6,7 +6,7 @@ La generación del modelo se realiza en tres pasos
 2. Desarrollo de la Red Neural Convolucional usando la librería [Keras](http://keras.io)
 3. Exportar el modelo al formato `mlmodel` para importarlo posteriormente en Xcode.
 
-##Requisitos Previos
+## Requisitos Previos
 
 Necesitarás tener instalada una versión de Python 2.7 o 3.6. Puedes descargarlas desde la web de Python. Tras instalarlo necesitarás además una serie de librería que detallamos a continuacion
 
@@ -36,9 +36,9 @@ pip list
 
 Deberías ver esas librerías en el listado que aparecer en tu terminal del sistema.
 
-##Generación de Imágenes para Entrenamiento y Validación
+## Generación de Imágenes para Entrenamiento y Validación
 
 
-##Desarrollo de la Red Neural Convolucional
+## Desarrollo de la Red Neural Convolucional
 
-##Exportación a CoreML
+## Exportación a CoreML
