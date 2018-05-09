@@ -5,4 +5,4 @@ La idea de este proyecto era la de desarrollar un modelo con Keras desde cero, e
 
 Y en el siguiente vídeo podeís ver el resultado
 
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/DwYoWG4OEZc/0.jpg)](https://www.youtube.com/edit?o=U&video_id=DwYoWG4OEZc "Deep Learning para BiciMAD - Demo")
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/DwYoWG4OEZc/0.jpg)](https://www.youtube.com/edit?o=U&video_id=DwYoWG4OEZc)
