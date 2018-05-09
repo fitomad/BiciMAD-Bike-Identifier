@@ -52,4 +52,45 @@ Tras unos minutos tendrás una nueva carpeta llamada `preview` con los conjuntos
 
 ## Desarrollo de la Red Neural Convolucional
 
+Si ya tienes las imágenes de los números estás listo para entrenar la Red Neural Convolucional. 
+
+Lo primero que tienes que hacer es renombrar la carpeta `preview` para que pase a llamarse `data`.
+
+Después, dirígite a tu terminal de comando y ejecuta...
+
+```
+python cnn_bicimad_model.py
+```
+
+Este proceso tarda bastante (dependiento del números de *epochs* y *pasos* que hayamos definido) así que ármate de paciencia. 
+
+Cuando haya acabo tendrás dos archivos en tu carpeta...
+
+* Uno con el modelo (MLBiciMAD.h5)
+* Y el archivo con los pesos (MLBiciMAD_Weights.h5)
+
 ## Exportación a CoreML
+
+¿Ya tienes el archivo con los pesos y el modelo? ¡Estupendo! 
+
+Supongo que querrás pobrarlo en tu app así que sólo nos queda un pequeño paso; convertir el archivo `MLBiciMAD.h5` al formato `mlmodel` definido por CoreML.
+
+Tranquilo, que también te dejo un script Python para ya lo hace por ti. De nuevo ve al terminal de comando y ejecuta...
+
+```
+python exporte.py
+```
+
+Al terminal tendrás otro nuevo archivo en tu carpeta. En este caso se llama `MLBiciMAD.mlmodel`
+
+## Enlaces de Interés
+
+* [Keras](https://keras.io). La librería de Deep Learning
+* [TensorFlow](https://www.tensorflow.org/). Sobre la que trabaja Keras. Desarrollada por Google
+* [h5py](https://www.h5py.org/). Necesario para guardar los archivos de pesos y el modelo de Keras
+* [coremltools](https://apple.github.io/coremltools/). Desarrollado por Apple, ayuda a traducir los modelos en un formato legible para Xcode.
+* [CoreML](https://developer.apple.com/machine-learning/). El framework de Apple para trabajar con Machine Learning
+
+## Contacto
+
+Todas las dudas o sugerencias que tengas me las puedes plantear a través de twitter en mi cuenta [@fitomad](https://twitter.com/fitomad)
