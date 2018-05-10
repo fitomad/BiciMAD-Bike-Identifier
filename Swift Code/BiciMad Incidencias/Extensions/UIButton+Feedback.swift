@@ -8,31 +8,17 @@
 
 import UIKit
 import Foundation
-import AVFoundation
+import AudioToolbox
 
 public extension UIButton
 {
-	public func selectedFeedback() -> Void
-	{
-		guard let asset = NSDataAsset(name:"Selected"),
-			  let player = try? AVAudioPlayer(data: asset.data, fileTypeHint: "m4a")
-		else
-		{
-			return
-		}
-
-    	player.play()
+    public func selectedFeedback() -> Void
+    {
+        AudioServicesPlaySystemSound(1104)
 	}
 
 	public func unselectedFeedback() -> Void
 	{
-		guard let asset = NSDataAsset(name:"Unselected"),
-			  let player = try? AVAudioPlayer(data: asset.data, fileTypeHint: "m4a")
-		else
-		{
-			return
-		}
-
-    	player.play()
+        AudioServicesPlaySystemSound(1104)
 	}
 }
