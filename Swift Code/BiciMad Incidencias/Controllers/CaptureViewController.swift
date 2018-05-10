@@ -10,6 +10,7 @@ import UIKit
 import Vision
 import ImageIO
 import AVFoundation
+import AudioToolbox
 
 import IncidenceKit
 
@@ -239,7 +240,7 @@ internal class CaptureViewController: UIViewController
             for box in observation.characterBoxes!
             {
                 // El rectángulo del número
-                let box_rect = box.boundingBox.scaled(to: ciBikeImage.extent.size)
+                let box_rect = box.boundingBox.scaled(to: imageSize)
                 
                 // Calculamos los vértices del rectangulo...
                 let topLeft = box.topLeft.scaled(to: imageSize)
@@ -277,6 +278,8 @@ internal class CaptureViewController: UIViewController
                 // para la misma imagen? 
                 if self.validadBikeIdentification(forBikeSerial: serial_number)
                 {
+                    // Feedback
+                    AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
                     // Detenemos la captura de imagen
                     self.cameraSession.stopRunning()
                     // Vamos a trabajar con la incidencia
