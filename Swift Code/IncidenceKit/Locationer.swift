@@ -59,7 +59,7 @@ public class Locationer: NSObject
     */
     private func manageAuthoritation() -> Void
     {
-        if case .authorizedWhenInUse != CLLocationManager.authorizationStatus()
+        if CLLocationManager.authorizationStatus() != .authorizedWhenInUse 
         {
             self.locationManager.requestWhenInUseAuthorization()
         }
@@ -107,13 +107,25 @@ public class Locationer: NSObject
                 return
             }
             
+            var address = String()
+            
+            if let name = placemark.name
+            {
+                address = name
+            }
+            
+            if let postal_code = placemark.postalCode
+            {
+                address += " － \(postal_code)"
+            }
+            
             if let handler = handler
             {
-                handler(placemark.name)
+                handler(address)
             }
             else
             {
-                self.myAddress = placemark.name
+                self.myAddress = address
             }
         }
     }
