@@ -4,6 +4,8 @@
 <dict>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>La posición ayuda a BiciMAD para que puedan solventar la incidencia más rápido</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>La posición ayuda a BiciMAD para que puedan solventar la incidencia más rápido</string>
 	<key>NSCameraUsageDescription</key>
 	<string>Podras usar la foto para informar de las incidencias de BiciMAD</string>
 	<key>CFBundleDevelopmentRegion</key>
