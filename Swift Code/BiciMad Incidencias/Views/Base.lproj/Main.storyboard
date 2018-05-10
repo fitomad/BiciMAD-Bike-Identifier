@@ -164,7 +164,7 @@
                                     <action selector="handleSendButtonTapWithSender:" destination="l2u-rZ-ErC" eventType="touchUpInside" id="1zQ-Eg-tIL"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="F8n-dY-b48">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image-Placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="F8n-dY-b48">
                                 <rect key="frame" x="16" y="16" width="343" height="215"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="F8n-dY-b48" secondAttribute="height" multiplier="343:215" id="fcU-el-aZp"/>
@@ -175,7 +175,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Ipz-ZP-b4H"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
                                 <state key="normal" title="FRENOS"/>
                                 <connections>
                                     <action selector="handleIncidenceBreaksButtonTapWithSender:" destination="l2u-rZ-ErC" eventType="touchUpInside" id="BSt-TA-nbP"/>
@@ -186,7 +186,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="sPl-Em-b7w"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
                                 <state key="normal" title="MOTOR"/>
                                 <connections>
                                     <action selector="handleIncidenceEngineButtonTapWithSender:" destination="l2u-rZ-ErC" eventType="touchUpInside" id="bya-Og-Pr4"/>
@@ -197,7 +197,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="waY-wI-3gf"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
                                 <state key="normal" title="LUCES"/>
                                 <connections>
                                     <action selector="handleIncidenceLightsButtonTapWithSender:" destination="l2u-rZ-ErC" eventType="touchUpInside" id="SsZ-If-avH"/>
@@ -208,7 +208,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="nTd-Pr-i06"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
                                 <state key="normal" title="ANCLAJE"/>
                                 <connections>
                                     <action selector="handleIncidenceHookButtonTapWithSender:" destination="l2u-rZ-ErC" eventType="touchUpInside" id="e1Z-oM-4Nu"/>
@@ -219,7 +219,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="zAq-gH-mhW"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
                                 <state key="normal" title="RUEDAS"/>
                                 <connections>
                                     <action selector="handleIncidenceWheelButtonTapWithSender:" destination="l2u-rZ-ErC" eventType="touchUpInside" id="aT6-UB-ePc"/>
@@ -230,7 +230,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="obD-Ve-Cbv"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
                                 <state key="normal" title="OTROS"/>
                                 <connections>
                                     <action selector="handleIncidenceOtherButtonTapWithSender:" destination="l2u-rZ-ErC" eventType="touchUpInside" id="1ZA-vE-z92"/>
@@ -336,5 +336,6 @@
         <image name="Bike-Oncoming" width="650" height="388"/>
         <image name="ButtonCapture" width="270" height="270"/>
         <image name="ButtonFlash" width="105" height="105"/>
+        <image name="Image-Placeholder" width="343" height="215"/>
     </resources>
 </document>
