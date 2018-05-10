@@ -161,9 +161,9 @@ internal class IncidenceViewController: UIViewController
         let animator = UIViewPropertyAnimator(duration: 0.35, curve: .easeIn)
 
         animator.addAnimations({
-            button.backgroundColor = UIColor(hexadecimal: "#2e2e2e")
+            button.backgroundColor = UIColor(hexadecimal: "#675948")
             button.tintColor = UIColor(hexadecimal: "#ffffff")
-            button.layer.borderColor = UIColor(hexadecimal: "#2e2e2e").cgColor
+            button.layer.borderColor = UIColor(hexadecimal: "#675948").cgColor
             button.layer.borderWidth = 1.0
             button.layer.cornerRadius = button.bounds.height / 2.0
             button.layer.masksToBounds = true
@@ -287,8 +287,7 @@ internal class IncidenceViewController: UIViewController
     */
     @IBAction private func handleSendButtonTap(sender: UIButton) -> Void
     {
-        // La incidencia está terminada
-        // Sólo queda enviarla...
+        
     }
 }
 
@@ -304,6 +303,7 @@ extension IncidenceViewController: CameraViewControllerDelegate
     func cameraViewController(_ controller: CameraViewController, didFinishTakePhoto photo: UIImage) -> Void
     {
         self.imagePhoto.image = photo
+        self.incidence?.image = photo
     }
 
     /**
@@ -328,6 +328,7 @@ extension IncidenceViewController: LocationerDelegate
             if let address = address
             {
                 self.labelAddress.text = address
+                self.incidence?.address = address
             }
         }
     }
