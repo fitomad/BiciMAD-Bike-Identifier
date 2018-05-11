@@ -50,3 +50,35 @@ let correctedImage = ciBikeImage
     ])
              
 ```
+
+Y aquí es donde le paso la imagen el modelo para que me de el resultado de su clasificación
+
+```swift
+public func prediction(image: CIImage) -> Int?
+{
+	guard let buffer = self.pixelBuffer(from: image),
+		  let output = try? self.model.prediction(image: buffer)
+	else
+	{
+		return nil
+	}
+
+	let digit = output.numero.enumerated()
+		.filter({ $0.element.value > 0.90 && $0.element.value <= 1.0 })
+		.map({ $0.element })
+		.sorted(by: { $0.value < $1.value })
+		.first
+
+	if let digit = digit, let number = Int(digit.key)
+	{
+		return number
+	}
+
+	return nil
+}
+```
+
+## Contacto
+
+Si tienes alguna duda o comentario que me quieras hacer lo mejor es que me busques en twitter, allí me encuentras en [@fitomad](https://twitter.com/fitomad) 
+
