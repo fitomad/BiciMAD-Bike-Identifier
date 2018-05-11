@@ -1,5 +1,7 @@
 # Deep Learning. El modelo para BiciMAD
 
+![Keras](https://img.shields.io/badge/Keras-2.1.6-yellow.svg) ![TensorFlow](https://img.shields.io/badge/TensorFlow-1.8.0-yellow.svg) ![Python 2.7](https://img.shields.io/badge/python-2.7-blue.svg) ![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)
+
 La generación del modelo se realiza en tres pasos
 
 1. Generación de los datos para los conjuntos de **entrenamiento** y **validación**
