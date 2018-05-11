@@ -51,7 +51,7 @@ He grabado tres vídeos con explicaciones más detalladas de cada paso a seguir 
 
 ## Contacto
 
-¿Alguna duda o comentario? No os cortéis y mandame lo que queráis a mi cuenta de twitter [@fitmomad](https://twitter.com/fitomad)
+¿Alguna duda o comentario? No os cortéis y mandame lo que queráis a mi cuenta de twitter [@fitomad](https://twitter.com/fitomad)
 
 ## ¿Pero esto funciona de verdad?
 
