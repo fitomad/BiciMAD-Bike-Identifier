@@ -55,6 +55,6 @@ He grabado tres vídeos con explicaciones más detalladas de cada paso que inclu
 
 ## ¿Pero esto funciona de verdad?
 
-Judgad por vosotros mismo ;-)
+Juzgad por vosotros mismo ;-)
 
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/DwYoWG4OEZc/0.jpg)](https://www.youtube.com/watch?v=DwYoWG4OEZc)
