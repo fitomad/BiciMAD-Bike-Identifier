@@ -7,9 +7,9 @@ La idea de este proyecto era la de desarrollar un modelo con [Keras](https://ker
 
 ## Estructura del repositorio
 
-El proyecto está dividio en dos dos partes, una dedicada a la parte de Deep Learning y otro que contiene el desarrollo de la app para iPhone que incluye el modelo.
+El proyecto está dividio en dos partes, una dedicada a la parte de Deep Learning y otra que contiene el desarrollo de la app para iPhone que incluye el modelo.
 
-Cada carpeta contiene su archvivo *readme.md* con información específica a la parte del proyecto a la que pertenece.
+Cada carpeta contiene su propio fichero *readme.md* con información específica a la parte del proyecto a la que pertenece.
 
 ### Deep Learning
 
