@@ -45,7 +45,7 @@ Este último punto deja de ser relevante que ya la EMT, empresa operadora del se
 
 He grabado tres vídeos con explicaciones más detalladas de cada paso que incluyen información adicional y alguna que otra aclaración sobre el código
 
-1. [Deep Learning Parte I](https://www.youtube.com/watch?v=w_T030MtnBs&t=1s). Generación de los datos de entrenamiento y validación a partide sólo 30 imágenes.
+1. [Deep Learning Parte I](https://www.youtube.com/watch?v=w_T030MtnBs&t=1s). Generación de los datos de entrenamiento y validación a partir de sólo 30 imágenes.
 2. [Deep Learning Parte II](https://www.youtube.com/watch?v=jhuLToYuiiQ&t=1s). Desarrollo de una Red Convolucional y explicación de cada uno de los filtros que empleo en ella. Exportación a CoreML.
 3. [App para iPhone con Swift](https://www.youtube.com/watch?v=_yBr-n7cdTo&t=1s). Importamos el modelo y vemos cada uno de los pasos necesarios para poder llevar el númnero de una bicicleta con la cámara del iPhone al modelo y clasificarlo.
 
